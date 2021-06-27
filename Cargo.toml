@@ -1,0 +1,13 @@
+[package]
+name = "sensor-relay"
+version = "0.1.0"
+authors = ["Magnus Eriksson <eriksson.mag@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.2", features = ["macros", "sync", "rt-threaded"] }
+warp = "0.2"
+serde = {version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+futures = { version = "0.3", default-features = false }
+uuid = { version = "0.4", features = ["serde", "v4"] }
