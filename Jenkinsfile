@@ -4,7 +4,7 @@ podTemplate(
   containers: [
     containerTemplate(
       name: 'jnlp',
-      image: 'synology:6000/inbound-agent-rust-docker:1.0',
+      image: 'synology:6000/inbound-agent-rust-docker:1.1',
       resourceRequestMemory: '1200Mi',
       resourceLimitMemory: '2000Mi',
       alwaysPullImage: true,
