@@ -1,5 +1,5 @@
 podTemplate(
-  label: 'jenkins-slave-rust',
+  label: 'jenkins-slave-rust-1',
   nodeSelector: 'memory: hi',
   containers: [
     containerTemplate(
@@ -12,7 +12,7 @@ podTemplate(
     )
   ]
 ) {
-    node('jenkins-slave-rust') {
+    node('jenkins-slave-rust-1') {
 
         def dockerRegistry = "synology.int.mindphaser.se:6000"
         def myRepo = checkout scm
