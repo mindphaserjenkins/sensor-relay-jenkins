@@ -23,7 +23,6 @@ podTemplate(
 
         stage('Build application') {
           echo "Building $dockerImage"
-          sh "sleep 300"
           sh "cargo build"
           echo 'Done'
         }
