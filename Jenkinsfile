@@ -1,10 +1,10 @@
 podTemplate(
-  label: 'jenkins-slave-rust-2',
+  label: 'jenkins-slave-rust-3',
   nodeSelector: 'memory: hi',
   containers: [
     containerTemplate(
       name: 'jnlp',
-      image: 'synology:6000/inbound-agent-rust-docker:1.2',
+      image: 'synology:6000/inbound-agent-rust-docker:1.3',
       resourceRequestMemory: '1200Mi',
       resourceLimitMemory: '2000Mi',
       alwaysPullImage: true,
@@ -12,7 +12,7 @@ podTemplate(
     )
   ]
 ) {
-    node('jenkins-slave-rust-2') {
+    node('jenkins-slave-rust-3') {
 
         def dockerRegistry = "synology.int.mindphaser.se:6000"
         def myRepo = checkout scm
