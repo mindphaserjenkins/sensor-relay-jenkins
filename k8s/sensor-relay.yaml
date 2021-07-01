@@ -16,7 +16,7 @@ kind: Deployment
 metadata:
   name: sensor-relay
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: sensor-relay
