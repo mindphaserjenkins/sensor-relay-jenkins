@@ -26,6 +26,6 @@ spec:
         app: sensor-relay
     spec:
       containers:
-      - image: synology.int.mindphaser.se:6000/sensor-relay:1.0.0
+      - image: $DOCKER_IMAGE
         imagePullPolicy: Always
         name: sensor-relay-container
