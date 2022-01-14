@@ -23,7 +23,7 @@ podTemplate(
 
         stage('Build application') {
           echo "Building $dockerImage"
-          sh "cargo build"
+          sh "cargo build --release"
           echo 'Done'
         }
 
