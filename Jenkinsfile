@@ -51,7 +51,7 @@ podTemplate(
           stage('Deploy to Kubernetes') {
             echo "Deploying to Kubernetes"
             withKubeConfig([credentialsId: 'microk8s']) {
-              sh "envsubst < k8s-deploy.yaml | kubectl apply -n default -f -"
+              sh "envsubst < k8s/sensor-relay.yaml | kubectl apply -n default -f -"
             }
             echo "Done deploying to Kubernetes"
           }
