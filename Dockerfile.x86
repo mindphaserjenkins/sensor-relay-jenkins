@@ -1,0 +1,8 @@
+FROM debian:stable
+
+RUN apt update
+RUN apt install -y ca-certificates
+
+COPY build/target/release/sensor-relay /sensor-relay
+WORKDIR /
+CMD ["/sensor-relay"]
